@@ -1,0 +1,55 @@
+{
+  "name": "moral-lint",
+  "version": "1.0.0",
+  "description": "An AI-augmented static analysis framework that evaluates code for semantic consistency, intent-behavior alignment, and ethical compliance.",
+  "main": "src/index.js",
+  "bin": {
+    "moral-lint": "./bin/moral-lint.js"
+  },
+  "scripts": {
+    "lint": "node bin/moral-lint.js",
+    "test": "jest --verbose",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "linter",
+    "static-analysis",
+    "ethics",
+    "semantic-analysis",
+    "ast",
+    "code-quality",
+    "intent-verification",
+    "consent-bypass",
+    "dark-patterns",
+    "responsible-software"
+  ],
+  "author": "Kartik Gupta, Priyanshi Rai, Jyotiraditya Singh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kkartik14/moral-lint.git"
+  },
+  "homepage": "https://www.npmjs.com/package/moral-lint",
+  "dependencies": {
+    "@babel/parser": "^7.24.0",
+    "@babel/traverse": "^7.24.0",
+    "chalk": "^4.1.2",
+    "commander": "^12.0.0",
+    "dotenv": "^16.4.0",
+    "glob": "^10.3.0",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE",
+    ".morallint.config.js"
+  ]
+}
